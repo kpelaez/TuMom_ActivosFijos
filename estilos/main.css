@@ -1,0 +1,58 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo banner */
+.banner{
+    background-color: black;
+}
+
+.banner img {
+    max-width: 60%;
+    height: 200px;
+    align-self: center;
+}
+
+/* Estilo nav */
+.mi-menu{
+    background-color: green;
+    border-style: dotted;
+    border-color: black;
+}
+
+.mi-menu ul li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: medium;
+}
+.titulo{
+    align-self: center;
+    margin: 10px;
+}
+.subtitulo, .subtitulo-2{
+    align-self: center;
+    margin: 10px;
+}
+
+main{
+    background-color: green;
+}
+main section form{
+    display: block;
+    margin-left: 40%;
+}
+
+main section form label{
+    font-size: xx-large;
+    text-decoration-color: black;
+    font-weight: bold;
+}
+
+main section form input, select{
+    height: 40px;
+    width: 200px;
+    font-size: x-large;
+}
