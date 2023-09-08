@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="banner">
+        <!-- ACA VA EL BANNER DE OMNIMEDICA -->
+        <img src="" alt="" class="banner-img">
+        <nav class="mi-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/tablas.html">Ver Tabla</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="titulo">CARGA ACTIVOS FIJOS</h1>
+            <h2 class="subtitulo">Carga Datos </h2>
+            <h3 class="subtitulo-2">Formulario</h3>
+            
+            <form action="" class="mi-formulario">
+
+                <label for="fecha">Fecha: </label>
+                <input type="date" id="FechaAlta" required>
+                
+                <br><br>
+                
+                <label for="clase">Clase: </label>
+                <select name="clase" id="Clase" required>
+                    <option value="Notebook">Notebook</option>
+                    <option value="Impresora">Impresora</option>
+                    <option value="Celular">Celular</option>
+                </select>
+                
+                <br><br>
+
+                <label for="marca">Marca: </label>
+                <input type="text" id="Marca" name="marca" requiered>
+                
+                <br><br>
+                
+                <label for="modelo">Modelo: </label>
+                <input type="text" id="Modelo" name="modelo">
+
+                <br><br>
+                <label for="serie">Serie Nro: </label>
+
+                <input type="text" id="Serie" name="serie">
+                
+                <br><br>
+                
+                <label for="sector">Sector: </label>
+                <select id="Sector" name="">
+                    <option value="Comex">Comex</option>
+                    <option value="RRHH">RRHH</option>
+                    <option value="Ventas">Ventas</option>
+                    <option value="Gerencia-Adm">Gerencia Adm</option>
+                    <option value="Gerencia-Vtas">Gerencia Ventas</option>
+                    <option value="Administracion">Administracion</option>
+                    <option value="Adm-ventas">Adm Ventas</option>
+                    <option value="Stock">Stock</option>
+                    <option value="Tesoreria">Tesoreria</option>
+                    <option value="Asistencia Dir">Asistencia Direccion</option>
+                    <option value="Directorio">Directorio</option>
+                    <option value="DirTecnica">Direccion Tecnica</option>
+                </select>
+                
+                <br><br>
+                
+                <label for="usuario">Usuario: </label>
+                <input type="text" id="Usuario" name="usuario">
+
+                <br><br>
+
+                <label for="estado">Estado: </label>
+                <select name="estado" id="Estado">
+                    <option value="A">Activo</option>
+                </select>
+                
+                <br><br>
+
+                <button type="button" onclick="agregarFila()">Agregar a la tabla</button>    
+                         
+            </form>
+        </section>
+
+        <h1>Tabla Para exportar</h1>
+
+        <table id="miTabla" border="1">
+            <tr>
+                <th>Clase</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Serie</th>
+                <th>Sector</th>
+                <th>Persona</th>
+                <th>Fecha Alta</th>
+                <th>Estado</th>
+            </tr>
+        </table>
+    
+        <button id="exportarExcel">Exportar a Excel</button>
+
+    </main>
+
+    <!-- Agrega la biblioteca SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    </main>
+    <footer>
+        <div class="derechos">Desarrollado por Tumom. </div>
+        <img src="" alt="" class="Tumom-img">
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
