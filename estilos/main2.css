@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner-omni{
+    background-color: black ;
+    justify-content: start;
+}
+
+.fondo-ppal{
+    background-color: black;
+    background-image: url(C:\Users\pelae\Documents\wallpapers\_Logo1.jpg);
+}
+
+.contenedor-ppal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #53cfcf;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.contenedor-login{
+    border-radius: 10px;
+    border-color: #E0E75B;
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(2,100px);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
