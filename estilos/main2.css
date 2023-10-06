@@ -14,53 +14,104 @@
 }
 
 .fondo-ppal{
+    /*Color del fondo main*/
     background-color: black;
    
 }
 
-
-
 .contenedor-ppal{
+    /*Hacer flex el contenedor*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*Fondo del contenedor*/
     background-color: black;
     background-image: url('../img/LogoTumom.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-
-    height: 80vh;
+    /*Tamaña contenedor*/
+    height: 75vh;
 }
 
 
 h1{
     color: #53cfcf;
-    font-size: x-large;
+    font-size: xXX-large;
     font-weight: bold;
+    padding-bottom: 40px;
 }
 
 .contenedor-login{
     border-radius: 10px;
     border-color: #E0E75B;
-    display: grid;
-    grid-template-columns: repeat(2,100px);
-    grid-template-rows: repeat(2,100px);
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
     align-items: center;
     
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
     /*Fondo transparente*/
     background-color: whitesmoke;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
+.contenedor-login form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
+.contenedor-login form label{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    justify-items: start;
+}
+
+.contenedor-login form input[type="text"],
+input[type="password"]{
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid black; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espaciado inferior entre los inputs */
+    width: 70%; /* Ancho del input al 100% del contenedor */
+    opacity: 1.0;
+}
+
+.contenedor-login form input[type="submit"] {
+    /* Estilos del botón de envío */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+  
+.contenedor-login form input[type="submit"]:hover {
+    /* Estilos del botón al pasar el cursor por encima */
+    background-color: #0056b3; /* Cambia el color de fondo */
+  }
 
 footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+}
+
+footer img{
+    height: auto;
+    width: 80px;
+}
+
+.derechos{
+    font-size: larger;
+    color: #53cfcf;
 }
