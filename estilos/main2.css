@@ -8,17 +8,32 @@
     justify-content: start;
 }
 
+.banner-omni img{
+    height: 100px;
+    width: auto;
+}
+
 .fondo-ppal{
     background-color: black;
-    background-image: url(C:\Users\pelae\Documents\wallpapers\_Logo1.jpg);
+   
 }
+
+
 
 .contenedor-ppal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    background-image: url('../img/LogoTumom.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    height: 80vh;
 }
+
 
 h1{
     color: #53cfcf;
@@ -34,7 +49,15 @@ h1{
     grid-template-rows: repeat(2,100px);
     justify-content: flex-start;
     align-items: center;
+    
+    width: 40%;
+    height: 40%;
+    /*Fondo transparente*/
+    background-color: whitesmoke;
+    opacity: 0.5;
 }
+
+
 
 footer{
     display: flex;

@@ -20,20 +20,20 @@
         </nav>
     </header>
     <main>
-        <section>
+        <div>
             <h1 class="titulo">CARGA ACTIVOS FIJOS</h1>
             <h2 class="subtitulo">Carga Datos </h2>
             <h3 class="subtitulo-2">Formulario</h3>
             
             <form action="" class="mi-formulario">
 
-                <label for="fecha">Fecha: </label>
-                <input type="date" id="FechaAlta" required>
+                <label class="label-form" for="fecha">Fecha: </label>
+                <input class="input" type="date" id="FechaAlta" required>
                 
                 <br><br>
                 
                 <label for="clase">Clase: </label>
-                <select name="clase" id="Clase" required>
+                <select class="input" name="clase" id="Clase" required>
                     <option value="Notebook">Notebook</option>
                     <option value="Impresora">Impresora</option>
                     <option value="Celular">Celular</option>
@@ -41,23 +41,23 @@
                 
                 <br><br>
 
-                <label for="marca">Marca: </label>
-                <input type="text" id="Marca" name="marca" requiered>
+                <label class="label-form" for="marca">Marca: </label>
+                <input class="input" type="text" id="Marca" name="marca" requiered>
                 
                 <br><br>
                 
-                <label for="modelo">Modelo: </label>
-                <input type="text" id="Modelo" name="modelo">
+                <label class="label-form" for="modelo">Modelo: </label>
+                <input class="input" type="text" id="Modelo" name="modelo">
 
                 <br><br>
-                <label for="serie">Serie Nro: </label>
+                <label class="label-form" for="serie">Serie Nro: </label>
 
-                <input type="text" id="Serie" name="serie">
+                <input class="input" type="text" id="Serie" name="serie">
                 
                 <br><br>
                 
                 <label for="sector">Sector: </label>
-                <select id="Sector" name="">
+                <select class="input" id="Sector" name="">
                     <option value="Comex">Comex</option>
                     <option value="RRHH">RRHH</option>
                     <option value="Ventas">Ventas</option>
@@ -74,13 +74,13 @@
                 
                 <br><br>
                 
-                <label for="usuario">Usuario: </label>
-                <input type="text" id="Usuario" name="usuario">
+                <label class="label-form" for="usuario">Usuario: </label>
+                <input class="input" type="text" id="Usuario" name="usuario">
 
                 <br><br>
 
                 <label for="estado">Estado: </label>
-                <select name="estado" id="Estado">
+                <select class="input" name="estado" id="Estado">
                     <option value="A">Activo</option>
                 </select>
                 
@@ -89,9 +89,9 @@
                 <button type="button" onclick="agregarFila()">Agregar a la tabla</button>    
                          
             </form>
-        </section>
+        </div>
 
-        <h1>Tabla Para exportar</h1>
+        <h2 class="titulo-tabla">Tabla Para exportar</h2>
 
         <table id="miTabla" border="1">
             <tr>
