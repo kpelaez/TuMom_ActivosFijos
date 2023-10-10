@@ -73,6 +73,7 @@ Solo los estilos particulares que tenga la pagina como sus clases se encontraran
     grid-template-columns: 90px auto;
     grid-template-rows: repeat(8,50px);
     justify-content: center;
+    margin-top: 25px;
 
 }
 
