@@ -1,0 +1,110 @@
+/* En este archivo estan los estilos de la pagina Ingresos.
+Solo los estilos particulares que tenga la pagina como sus clases se encontraran aca */
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos de menu de nav */
+
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilo del contenedor */
+    background-color: #2a8b4f;
+    height: 8vh;
+}
+
+.contenedor-menu .mi-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+.contenedor-menu .mi-menu li{
+    list-style: none;
+    font-size: x-large;
+    font-weight: bold;
+    border-left: 3px solid black;
+    padding-left: 5px;    
+}
+
+.fondo-ppal-paginas{
+    background-color: black;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-ppal-ingreso{
+    margin-top:10px ;
+    background-color: #2a8b4f;
+    height: 80vh;
+    width: 60%;
+    border-radius: 15px;
+}
+
+.contenedor-titulo-ingreso{
+    display: flex;
+    justify-content: center;
+}
+.titulo-ingresos{
+    font-size: XX-large;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+.form-ingreso{
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: repeat(8,50px);
+    justify-content: center;
+
+}
+
+.form-ingreso label{
+    justify-self: start;
+    margin-right: 5px;
+    align-self: center;
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom-left-radius: 8px;
+    padding: 2px;
+    
+}
+
+.form-ingreso input, select{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 60%;
+    align-self: center;
+
+}
+
+.btn-ingreso{
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;
+    grid-row: 8;
+    grid-column: 2;
+    width: 30px;
+
+}
+

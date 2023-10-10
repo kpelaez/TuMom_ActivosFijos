@@ -4,6 +4,7 @@
 }
 
 .banner-omni{
+    padding-top: 5px;
     background-color: black ;
     justify-content: start;
 }
@@ -16,6 +17,7 @@
 .fondo-ppal{
     /*Color del fondo main*/
     background-color: black;
+    height: 80vh;
    
 }
 
@@ -104,6 +106,7 @@ footer{
     justify-content: flex-end;
     align-items: center;
     background-color: black;
+    
 }
 
 footer img{
